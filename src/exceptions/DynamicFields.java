@@ -21,7 +21,7 @@ public class DynamicFields {
             result.append(obj[0]);
             result.append(": ");
             result.append(obj[1]);
-            result.append("/n");
+            result.append("\n");
         }
         return result.toString();
     }
