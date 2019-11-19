@@ -35,7 +35,8 @@ public class StartEnd {
     public static void main(String[] args) {
         for (String in : input.split("\n")){
             System.out.println("input : " + in);
-            for (String regex : new String[]{"\\w*ere\\w*","\\w*ever","T\\w+","Never.*?!"})examine(in,regex);
+            for (String regex : new String[]{"\\w*ere\\w*","\\w*ever","T\\w+","Never.*?!"})
+                examine(in,regex);
         }
     }
 }
