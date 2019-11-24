@@ -1,6 +1,7 @@
 package holding;
 
 import java.util.*;
+import typeinfo.pets.*;
 
 class Person {
     private String name;

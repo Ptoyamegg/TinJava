@@ -1,7 +1,7 @@
 package holding;
 
 import java.util.*;
-
+import typeinfo.pets.*;
 public class CrossContainerIteration {
     public static void display(Iterator<Pet> it) {
         while (it.hasNext()){

@@ -1,5 +1,5 @@
 package holding;
-
+import typeinfo.pets.*;
 import java.util.*;
 public class LinkedListFeatures {
     public static void main(String[] args) {

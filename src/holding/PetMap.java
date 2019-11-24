@@ -1,6 +1,7 @@
 package holding;
 
 import java.util.*;
+import typeinfo.pets.*;
 
 public class PetMap {
     public static void main(String[] args) {

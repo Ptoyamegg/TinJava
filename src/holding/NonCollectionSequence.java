@@ -1,6 +1,7 @@
 package holding;
 
 import java.util.*;
+import typeinfo.pets.*;
 
 class PetSequence{
     protected Pet[] pets = Pets.createArray(8);

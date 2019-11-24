@@ -1,6 +1,6 @@
 package holding;
 import java.util.*;
-
+import typeinfo.pets.*;
 public class InterfaceVsIterator {
     public static void display(Iterator<Pet> it){
         while (it.hasNext()){
