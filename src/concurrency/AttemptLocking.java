@@ -30,7 +30,7 @@ public class AttemptLocking {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         final AttemptLocking al = new AttemptLocking();
         al.untimed();   //  True -- lock is available
         al.timed();     //  True -- lock is available
@@ -43,6 +43,7 @@ public class AttemptLocking {
             }
         }.start();
         Thread.yield(); //  Give the 2nd task a chance
+        TimeUnit.SECONDS.sleep(1);
         al.untimed();   //  False -- lock grabbed by task
         al.timed();     //  False -- lock grabbed by task
         //  盲猜被优化
