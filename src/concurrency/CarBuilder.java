@@ -1,8 +1,6 @@
 package concurrency;
 //  A complex example of tasks working together.
 
-import sun.tools.tree.ThisExpression;
-
 import java.util.HashSet;
 import java.util.Set;
 import java.util.concurrent.*;
@@ -16,7 +14,7 @@ class Car {
     public synchronized int getId() { return id; }
     public synchronized void addEngine() { engine = true; }
     public synchronized void addDriveTrain() { driveTrain = true; }
-    public synchronized void addWhells() { wheels = true; }
+    public synchronized void addWheels() { wheels = true; }
     public String toString() {
         return "Car " + id + " [" + "engine: " + engine +
                 " driveTrain: " + driveTrain +
@@ -149,7 +147,7 @@ abstract class Robot implements Runnable {
             //  This one we want to know about
             throw new RuntimeException(e);
         }
-        System.out.println(this + "off");
+        System.out.println(this + " off");
     }
     public String toString() { return getClass().getName(); }
 }
@@ -177,7 +175,7 @@ class WheelRobot extends Robot {
     }
     protected void performService() {
         System.out.println(this + " installing Wheels");
-        assembler.car().addWhells();
+        assembler.car().addWheels();
     }
 }
 public class CarBuilder {
